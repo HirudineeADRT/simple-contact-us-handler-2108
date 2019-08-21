@@ -9,7 +9,8 @@
         "isDirectory": true,
         "children": [
           "1fe8cc6a-6339-45df-ac00-44376a53c2c1",
-          "8d0c1e1b-48c7-4ea8-87b5-ab407298bc23"
+          "8d0c1e1b-48c7-4ea8-87b5-ab407298bc23",
+          "497b86e8-9f2f-49ae-b5d7-afb2b48a36b3"
         ],
         "isRemovable": false,
         "filePath": "simple-contact-us-handler"
@@ -61,15 +62,80 @@
           "memory": 128,
           "layers": []
         }
+      },
+      "497b86e8-9f2f-49ae-b5d7-afb2b48a36b3": {
+        "id": "497b86e8-9f2f-49ae-b5d7-afb2b48a36b3",
+        "parent": "592f3252-0358-4b4e-bd5b-dd686cbd78fc",
+        "name": "sample",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "d127ce67-f148-4481-a6aa-18383fa6421e",
+          "5ea9eaf4-4f0a-4d5c-8185-442c4849fa49"
+        ],
+        "isRemovable": true,
+        "filePath": "simple-contact-us-handler/sample"
+      },
+      "d127ce67-f148-4481-a6aa-18383fa6421e": {
+        "id": "d127ce67-f148-4481-a6aa-18383fa6421e",
+        "parent": "497b86e8-9f2f-49ae-b5d7-afb2b48a36b3",
+        "name": "hirutest.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "simple-contact-us-handler/sample/hirutest.js",
+        "code": "exports.handler = function (event, context, callback) {\r\n\r\n    \r\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "5ea9eaf4-4f0a-4d5c-8185-442c4849fa49": {
+        "id": "5ea9eaf4-4f0a-4d5c-8185-442c4849fa49",
+        "parent": "497b86e8-9f2f-49ae-b5d7-afb2b48a36b3",
+        "name": "sampleedit.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "simple-contact-us-handler/sample/sampleedit.js",
+        "code": "exports.handler = function (event, context, callback) {\r\n\r\n    \r\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "vpc": "vpc-ee1ef195",
+          "subNets": [
+            "subnet-993076a6"
+          ],
+          "secGroups": [
+            "sg-00c0e38b3ca019399"
+          ],
+          "xRayEnabled": true,
+          "dqlARN": "arn:aws:sns:us-east-1:318300609668:TestSNS",
+          "throttleLimit": 0
+        },
+        "triggers": []
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "simple-contact-us-handler/sample/sample.js"
+    ],
     "rootNode": "592f3252-0358-4b4e-bd5b-dd686cbd78fc",
     "openFiles": [
       "1fe8cc6a-6339-45df-ac00-44376a53c2c1",
-      "8d0c1e1b-48c7-4ea8-87b5-ab407298bc23"
+      "8d0c1e1b-48c7-4ea8-87b5-ab407298bc23",
+      "d127ce67-f148-4481-a6aa-18383fa6421e",
+      "5ea9eaf4-4f0a-4d5c-8185-442c4849fa49"
     ],
-    "currentFileId": "8d0c1e1b-48c7-4ea8-87b5-ab407298bc23",
+    "currentFileId": "5ea9eaf4-4f0a-4d5c-8185-442c4849fa49",
     "resources": {
       "apigusEast1contactuscontactpost": {
         "name": "apigusEast1contactuscontactpost",
@@ -346,7 +412,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1566370585048
+    "lastSave": 1566371961003
   },
   "VCS_STATE": {
     "provider": "GitHub",
